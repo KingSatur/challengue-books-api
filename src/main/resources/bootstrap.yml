@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: books-api
+  config:
+    import: optional:configserver:http://localhost:8071
+
+info:
+  app:
+    name: accounts microservice
+    description: Cambank accounts microservice
+    version: 1.0.0

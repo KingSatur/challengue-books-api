@@ -1,0 +1,17 @@
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8073/eureka/
+
+spring:
+  config:
+    import: optional:configserver:http://localhost:8071
+
+server:
+  servlet:
+    context-path: /books-management/api
+
